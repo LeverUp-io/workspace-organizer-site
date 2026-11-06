@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy policy for the Workspace Organizer Chrome extension.">
+<title>Workspace Organizer Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: a single reading column for a legal document; a summary table up top, numbered sections below. */
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --fg: #16181d;
+    --muted: #5d6472;
+    --line: #dfe2e8;
+    --accent: #2457d6;
+    --chip: #eef0f4;
+    --font-body: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "Geist Mono", ui-monospace, Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101216; --surface: #171a20; --fg: #e8eaee; --muted: #9aa1ad; --line: #2a2f38; --accent: #7ea2ff; --chip: #222731;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101216; --surface: #171a20; --fg: #e8eaee; --muted: #9aa1ad; --line: #2a2f38; --accent: #7ea2ff; --chip: #222731;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 40px 72px;
+  }
+  main { max-width: 700px; margin: 0 auto; min-width: 0; }
+  header { display: grid; gap: 10px; margin-bottom: 32px; }
+  .meta { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+  h1 { margin: 0; font-size: clamp(28px, 5vw, 38px); line-height: 1.15; font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
+  .lede { margin: 0; color: var(--muted); font-size: 17px; max-width: 62ch; }
+
+  .summary {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 6px 18px; margin: 0 0 32px; overflow-x: auto;
+  }
+  .summary table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .summary th, .summary td { text-align: left; vertical-align: top; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .summary tr:last-child th, .summary tr:last-child td { border-bottom: 0; }
+  .summary th { font-weight: 500; color: var(--muted); padding-right: 18px; white-space: nowrap; width: 1%; }
+
+  section { padding-top: 26px; margin-top: 26px; border-top: 1px solid var(--line); }
+  h2 { margin: 0 0 10px; font-size: 19px; line-height: 1.3; font-weight: 600; text-wrap: balance; }
+  p, ul { margin: 0 0 12px; max-width: 65ch; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  code { font-family: var(--font-mono); font-size: .88em; background: var(--chip); padding: 1px 6px; border-radius: 5px; }
+  footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="meta">Effective 6 November 2026</span>
+    <h1>Workspace Organizer Privacy Policy</h1>
+    <p class="lede">This policy explains what the Workspace Organizer Chrome extension stores, why, who can see it, and how
+      to have it deleted.</p>
+  </header>
+
+  <div class="summary">
+    <table>
+      <tr><th scope="row">We store</th><td>Your Google name, email address and profile picture, and the workspaces you create: their names, the addresses and titles of their tabs, resources, notes and tasks.</td></tr>
+      <tr><th scope="row">We don't</th><td>Read your browsing history outside your workspaces, access your Gmail or Google Drive, use analytics or ads, or sell any data.</td></tr>
+      <tr><th scope="row">Who sees it</th><td>Only you, and the people you share a workspace with.</td></tr>
+      <tr><th scope="row">Where</th><td>A database hosted by Supabase in Frankfurt, Germany (EU).</td></tr>
+    </table>
+  </div>
+
+  <section aria-labelledby="collect">
+    <h2 id="collect">1. Information the extension collects</h2>
+    <p><strong>Your account.</strong> When you sign in with Google, the extension receives your name, email address
+      and profile picture. It uses them to create your account, show who you are, and let others invite you to a
+      workspace. It requests no other Google permissions.</p>
+    <p><strong>Your workspaces.</strong> For each workspace you create or join, the extension stores:</p>
+    <ul>
+      <li>the workspace's name and its members;</li>
+      <li>the address, title and icon of the tabs open in that workspace, saved automatically so they can be restored
+        when you switch back or use another computer;</li>
+      <li>the resources (links), notes and tasks you add.</li>
+    </ul>
+    <p><strong>On your device.</strong> The extension also keeps a local copy of your workspace tabs, your dashboard
+      layout and your settings in Chrome's extension storage on your computer. This data doesn't leave your device
+      except as described above.</p>
+    <p>Tabs only become part of a workspace while that workspace is active. The extension doesn't record your
+      browsing history, the content of the pages you visit, or anything you type into websites.</p>
+  </section>
+
+  <section aria-labelledby="use">
+    <h2 id="use">2. How the information is used</h2>
+    <p>The information is used only to provide the extension's features: saving and restoring each workspace's tabs,
+      syncing your workspaces between your computers, and sharing workspaces with the people you invite. It isn't used
+      for advertising, profiling, analytics, or any purpose unrelated to these features.</p>
+    <p>The use of information received from Google APIs adheres to the
+      <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noopener">Chrome Web Store User Data Policy</a>,
+      including the Limited Use requirements.</p>
+  </section>
+
+  <section aria-labelledby="share">
+    <h2 id="share">3. Who can see your information</h2>
+    <ul>
+      <li><strong>You.</strong> Everything in your workspaces.</li>
+      <li><strong>Workspace members.</strong> When you share a workspace, its members can see its name, resources,
+        notes and tasks, and the email addresses of its members. They can't see your tabs: those stay personal to each
+        member.</li>
+      <li><strong>Service providers.</strong> Supabase hosts the database and handles sign-in, and Google
+        authenticates your account. They process the data only to provide those services.</li>
+    </ul>
+    <p>Data is never sold or transferred to anyone else, except where the law requires it.</p>
+  </section>
+
+  <section aria-labelledby="security">
+    <h2 id="security">4. Security</h2>
+    <p>Data travels over encrypted connections (HTTPS). Access rules in the database let each person read only their
+      own workspaces and the workspaces shared with them.</p>
+  </section>
+
+  <section aria-labelledby="retention">
+    <h2 id="retention">5. Keeping and deleting your information</h2>
+    <p>Your information is kept for as long as you use the extension.</p>
+    <ul>
+      <li><strong>Delete a workspace</strong> from the dashboard sidebar to remove it, with its tabs, resources, notes
+        and tasks, for you and all its members.</li>
+      <li><strong>Leave a shared workspace</strong> from its Share dialog to remove your access and your tabs in it.</li>
+      <li><strong>Remove the extension</strong> to delete the copy stored on your computer.</li>
+      <li><strong>Delete your account</strong> and all of its data by contacting the developer (see below). This is
+        done within 30 days.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="children">
+    <h2 id="children">6. Children</h2>
+    <p>The extension isn't directed at children under 13, and doesn't knowingly collect their information.</p>
+  </section>
+
+  <section aria-labelledby="changes">
+    <h2 id="changes">7. Changes to this policy</h2>
+    <p>If this policy changes, the new version is published on this page with a new effective date. Significant
+      changes are also noted in the extension's Chrome Web Store listing.</p>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">8. Contact</h2>
+    <p>For questions about this policy, or to have your account and data deleted, contact the developer at the support
+      email address shown on the
+      <a href="https://chromewebstore.google.com/" rel="noopener">Workspace Organizer listing in the Chrome Web Store</a>.</p>
+  </section>
+
+  <footer>Workspace Organizer for Google Chrome.</footer>
+</main>
+</body>
+</html>
